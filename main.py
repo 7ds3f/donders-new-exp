@@ -187,10 +187,14 @@ if __name__ == "__main__":
 
     #calculations
     avg_keystroke_time = sum(simple_tests_results)/len(simple_tests_results)
-    for entry in number_choice_tests_results:
-        entry -= avg_keystroke_time
-    for entry in letter_choice_tests_results:
-        entry -= avg_keystroke_time
+    temp1 = [entry - avg_keystroke_time for entry in number_choice_tests_results]
+    temp2 = [entry - avg_keystroke_time for entry in letter_choice_tests_results]
+    number_choice_tests_results = temp1
+    letter_choice_tests_results = temp2
+    #for entry in number_choice_tests_results:
+    #    entry -= avg_keystroke_time
+    #for entry in letter_choice_tests_results:
+    #    entry -= avg_keystroke_time
     avg_number_choice_time = sum(number_choice_tests_results)/len(number_choice_tests_results)
     avg_letter_choice_time = sum(letter_choice_tests_results)/len(letter_choice_tests_results)
 
