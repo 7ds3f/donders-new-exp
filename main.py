@@ -97,7 +97,7 @@ def simple(max_delay, count):
 def number_choice(max_delay, count, numbers):
     times = []
     #measure time required for long keystrokes
-    print("[ Simple Reaction Time Test ]")
+    print("[ Number Choice Reaction Test ]")
     print("When prompted, press \"[SPACE]\" and then the displayed NUMBER as fast as you can using ONE FINGER")
     time.sleep(5)
     for itr in range(count):
@@ -125,7 +125,7 @@ def number_choice(max_delay, count, numbers):
 def letter_choice(max_delay, count, letters):
     times = []
     #measure time required for long keystrokes
-    print("[ Simple Reaction Time Test ]")
+    print("[ Letter Choice Reaction Test ]")
     print("When prompted, press \"[SPACE]\" and then the displayed LETTER as fast as you can using ONE FINGER")
     time.sleep(5)
     for itr in range(count):
